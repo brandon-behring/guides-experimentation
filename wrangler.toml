@@ -1,0 +1,15 @@
+# Cloudflare Pages config — guides-experimentation pilot.
+#
+# Phase 0b: not deployed. This Pages project will be created in Phase 1 and
+# proxied from the hub repo's wrangler.toml at /experimentation/*.
+#
+# Phase 1 dashboard config:
+#   Framework preset: Astro
+#   Build command:    npm run build
+#   Build output:     dist
+#   Root directory:   /
+#   Node version:     20
+
+name = "guides-experimentation"
+compatibility_date = "2026-05-19"
+pages_build_output_dir = "./dist"

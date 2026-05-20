@@ -1,0 +1,40 @@
+# capstone-test.yml — Phase 1.5 SKETCH (not active).
+#
+# This workflow activates when capstone/ gains src/ + pyproject.toml.
+# Currently capstone/ contains only README + ADR-0001-capstone-out-of-scope.md
+# documenting the Phase 1.5 deferral per design doc v0.2 §10.6.5.
+#
+# To activate (Phase 1.5):
+#   1. Add pyproject.toml + src/ + evals/ + Makefile + WRITEUP.md under capstone/
+#   2. Uncomment the `jobs:` block below
+
+name: capstone-test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'capstone/**'
+      - '.github/workflows/capstone-test.yml'
+  pull_request:
+    paths:
+      - 'capstone/**'
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     defaults:
+#       run:
+#         working-directory: capstone
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Install uv
+#         run: curl -LsSf https://astral.sh/uv/install.sh | sh
+#       - name: Install Python deps
+#         run: uv sync --all-extras
+#       - name: pytest
+#         run: uv run pytest
+#       - name: Render WRITEUP.md (Quarto)
+#         run: |
+#           sudo apt-get install -y quarto
+#           quarto render WRITEUP.md

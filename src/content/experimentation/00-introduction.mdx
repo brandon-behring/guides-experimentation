@@ -1,0 +1,95 @@
+---
+title: "Introduction"
+slug: introduction
+description: "What this guide covers, who it's for, and what it does that other introductions to experimentation do not."
+freshness: literature-survey
+last_verified: 2026-05-19
+tags: [orientation, scope]
+sources: []
+draft: true
+mode: explanation
+target: retention
+ordering: concept-first
+commitment: long-lived
+paradigms: [default]
+research_debt_addressed: |
+  No compact, equation-fluent, IC5-target intro to experimentation exists for
+  ML engineers across the open web. Kohavi's "Trustworthy Online Controlled
+  Experiments" (2020) is comprehensive but assumes deep statistical background;
+  Netflix / DoorDash / Lyft engineering-blog posts assume working knowledge and
+  jump straight to specific techniques. This chapter fills the gap: a single
+  page that names the four-step experimentation loop, sites the controlled
+  experiment as the causal-inference workhorse, and points to the right chapter
+  for each follow-up question — without expecting calculus-of-variations
+  fluency or a CS Stats 101 background.
+task_classes: [orientation]
+companion_modules: []
+los:
+  - id: EXP-0.1
+    bloom: explain
+    statement: "Explain why randomization enables causal inference in the absence of unobserved-confounder assumptions"
+    anchor: experimentation-randomization-causal
+    threshold: true
+  - id: EXP-0.2
+    bloom: define
+    statement: "Define SUTVA and its two component assumptions (no interference, no hidden treatment variation)"
+    anchor: experimentation-sutva-definition
+    threshold: false
+  - id: EXP-0.3
+    bloom: explain
+    statement: "Explain the four-step experimentation loop (hypothesize, design, run, analyze) and which chapters cover each step"
+    anchor: experimentation-four-step-loop
+    threshold: false
+load_targets:
+  intrinsic: low
+  extraneous: low
+  germane: medium
+---
+
+import MarginNote from '@brandon_m_behring/book-scaffold-astro/components/MarginNote.astro';
+import KeyIdea from '@brandon_m_behring/book-scaffold-astro/components/KeyIdea.astro';
+
+# Introduction
+
+This guide is for mid-to-senior data scientists and ML engineers who already know what an A/B test is and want a single, equation-fluent reference that:
+
+- gets you from "what is a p-value, again?" to "I can debug a SRM in a two-sided marketplace under interference" without a textbook detour,
+- shows the math when it carries explanatory weight and skips it when it does not,
+- treats variance reduction (CUPED), sequential testing, and heterogeneous treatment effects as first-class topics rather than appendices, and
+- assumes you can read Python with pandas and statsmodels without hand-holding.
+
+<MarginNote category="Cross-Ref">
+Theory foundation: Vol 1 Ch 4 in the LaTeX-era interview-prep series covers power analysis in detail. This guide ports and extends that material.
+</MarginNote>
+
+## Why randomization
+
+<KeyIdea>
+**Randomization breaks the back of confounding.** When treatment assignment is independent of every potential outcome (observed or unobserved), the difference in observed means is an unbiased estimator of the average treatment effect — without needing to model the world.
+</KeyIdea>
+
+The full equation-fluent derivation lands in Chapter 3 of the Phase 1 deliverable. For now: the conditional independence of treatment and potential outcomes is what makes the observed-mean-difference equal the true ATE. The math is in the Phase 1 chapter; the consequence is that running an experiment is the cleanest causal-inference move available when you can.
+
+## SUTVA — the assumption that breaks first
+
+The Stable Unit Treatment Value Assumption has two parts:
+
+1. **No interference.** Unit i's outcome does not depend on unit j's treatment assignment. This breaks in two-sided marketplaces (drivers in Lyft's experiment affect ride availability for control riders), in social networks (a treated user changes content for untreated friends), and in any system with shared global resources (caches, recommenders, queues).
+2. **No hidden treatment variation.** "Treatment" is a single, well-defined intervention — not a mixture of bugged plus working code shipped to different cohorts.
+
+Most of this guide assumes SUTVA holds. The exceptions are explicit: interference is covered in Chapter 12, ramp interaction in Chapter 13.
+
+## The four-step loop
+
+| Step | Output | Covered in |
+|---|---|---|
+| Hypothesize | A directional, falsifiable claim about a single metric | Ch 2 |
+| Design | Sample size, MDE, allocation, guardrails, exclusions | Ch 4 to 6 |
+| Run | The experiment, with SRM checks and monitoring | Ch 7 |
+| Analyze | Point estimate, CI, significance, decision | Ch 8 to 11 |
+
+Variance reduction (CUPED, regression adjustment) folds into the design and analyze steps. Sequential testing changes the analyze step. Heterogeneous treatment effects extend the analyze step.
+
+## Phase 0b status
+
+This is the **00-introduction** chapter stub from Phase 0b — it exists to exercise the v0.2 chapter schema (see frontmatter above) and prove that `mode`, `target`, `ordering`, `los[]`, `research_debt_addressed`, `commitment`, `paradigms`, and `load_targets` parse, validate, and survive CI. The chapter body is illustrative; Phase 1 will rewrite it to publication quality alongside the other 15 chapters, including the equation-fluent derivations the design doc commits to.
