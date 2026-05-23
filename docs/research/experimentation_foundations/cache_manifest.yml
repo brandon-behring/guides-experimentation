@@ -21,7 +21,7 @@ entries:
   metadata_path: ~/Claude/research_cache/metadata/sha256/21c244297161c5d9d55bd77967333bb2a01eb757db7d484cb84d43b756937b5e.json
   restricted: false
   rights_status: private_use
-  extraction_status: raw_only
+  extraction_status: ok
 
 - cache_id: cache_2a47c57030e52960
   source_url: https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf
@@ -34,7 +34,7 @@ entries:
   metadata_path: ~/Claude/research_cache/metadata/sha256/2a47c57030e52960c57888ea3b2247fba699b11f0aefbc669e9fae51e82bc973.json
   restricted: false
   rights_status: private_use
-  extraction_status: raw_only
+  extraction_status: ok
 
 - cache_id: cache_4d6afc1fa928dba1
   source_url: https://arxiv.org/abs/1409.3174
@@ -60,7 +60,7 @@ entries:
   metadata_path: ~/Claude/research_cache/metadata/sha256/2cde7779b5be28cdcead7cbf2d3022db091f0e51d782614cadc61070d3662893.json
   restricted: false
   rights_status: private_use
-  extraction_status: raw_only
+  extraction_status: ok
 
 - cache_id: cache_90a19d1997680d1c
   source_url: https://doi.org/10.1109/ICSE.2017.76
@@ -86,7 +86,7 @@ entries:
   metadata_path: ~/Claude/research_cache/metadata/sha256/250c7f16c845159903bfc76c42f39950872a214dad21088ee1f04b7cdff83678.json
   restricted: false
   rights_status: private_use
-  extraction_status: raw_only
+  extraction_status: ok
 
 - cache_id: cache_98ed9af48b6700a1
   source_url: https://exp-platform.com/Documents/2015-08OnlineControlledExperimentsKDDKeynoteNR.pdf
@@ -99,7 +99,7 @@ entries:
   metadata_path: ~/Claude/research_cache/metadata/sha256/98ed9af48b6700a16952ee15947cec31ec8940d1394c73f6bde6a49f6c9a6060.json
   restricted: false
   rights_status: private_use
-  extraction_status: raw_only
+  extraction_status: ok
 
 - cache_id: cache_6e80b3d236549f05
   source_url: https://www.stat.berkeley.edu/~aldous/Real_World/ASA_statement.pdf
@@ -112,7 +112,7 @@ entries:
   metadata_path: ~/Claude/research_cache/metadata/sha256/6e80b3d236549f05bc29d9f8023225112082b984694ebe869e1a062b1163d192.json
   restricted: false
   rights_status: private_use
-  extraction_status: raw_only
+  extraction_status: ok
 
 - cache_id: cache_fc5416977d437223
   source_url: https://www.kdd.org/kdd2019/accepted-papers/view/diagnosing-sample-ratio-mismatch-in-online-controlled-experiments-a-taxonom
