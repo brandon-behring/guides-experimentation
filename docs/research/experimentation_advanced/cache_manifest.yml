@@ -1,0 +1,152 @@
+# Cache manifest — experimentation_advanced (11 entries)
+
+schema_version: 2
+topic: experimentation_advanced
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+cache_root: ~/Claude/research_cache
+
+entries:
+- cache_id: cache_1b96e4201cbff42f
+  source_url: https://arxiv.org/abs/1810.08240
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 48631
+  sha256: 1b96e4201cbff42f82bfcce3f9788661b0d5f5eb1be191d7ee9d6f9b1c32dc28
+  raw_path: ~/Claude/research_cache/blobs/sha256/1b96e4201cbff42f82bfcce3f9788661b0d5f5eb1be191d7ee9d6f9b1c32dc28
+  text_path: ~/Claude/research_cache/text/sha256/1b96e4201cbff42f82bfcce3f9788661b0d5f5eb1be191d7ee9d6f9b1c32dc28.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/1b96e4201cbff42f82bfcce3f9788661b0d5f5eb1be191d7ee9d6f9b1c32dc28.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_f5071bd8e5024c75
+  source_url: https://arxiv.org/abs/1512.04922
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 44810
+  sha256: f5071bd8e5024c75fd5b4bdd8abe6a5bea99a6871df2d5ed4e8c25e1d3e081fd
+  raw_path: ~/Claude/research_cache/blobs/sha256/f5071bd8e5024c75fd5b4bdd8abe6a5bea99a6871df2d5ed4e8c25e1d3e081fd
+  text_path: ~/Claude/research_cache/text/sha256/f5071bd8e5024c75fd5b4bdd8abe6a5bea99a6871df2d5ed4e8c25e1d3e081fd.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/f5071bd8e5024c75fd5b4bdd8abe6a5bea99a6871df2d5ed4e8c25e1d3e081fd.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_71ab3459dd906c3f
+  source_url: https://arxiv.org/abs/1404.7530
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 48016
+  sha256: 71ab3459dd906c3f93f7960659afea8dff832a08de314c86b92fdea2305ab160
+  raw_path: ~/Claude/research_cache/blobs/sha256/71ab3459dd906c3f93f7960659afea8dff832a08de314c86b92fdea2305ab160
+  text_path: ~/Claude/research_cache/text/sha256/71ab3459dd906c3f93f7960659afea8dff832a08de314c86b92fdea2305ab160.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/71ab3459dd906c3f93f7960659afea8dff832a08de314c86b92fdea2305ab160.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_815355773f49a6de
+  source_url: https://arxiv.org/abs/2009.00148
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 46743
+  sha256: 815355773f49a6dee3a0fe21784401ba4726300ea6bc6f0c04f3de8b496fe6de
+  raw_path: ~/Claude/research_cache/blobs/sha256/815355773f49a6dee3a0fe21784401ba4726300ea6bc6f0c04f3de8b496fe6de
+  text_path: ~/Claude/research_cache/text/sha256/815355773f49a6dee3a0fe21784401ba4726300ea6bc6f0c04f3de8b496fe6de.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/815355773f49a6dee3a0fe21784401ba4726300ea6bc6f0c04f3de8b496fe6de.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_1afaffa01d57a84c
+  source_url: https://arxiv.org/abs/1003.0146
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 50691
+  sha256: 1afaffa01d57a84c4ce792a713792c2da43bdef5c85be091807fa86977ff0a5c
+  raw_path: ~/Claude/research_cache/blobs/sha256/1afaffa01d57a84c4ce792a713792c2da43bdef5c85be091807fa86977ff0a5c
+  text_path: ~/Claude/research_cache/text/sha256/1afaffa01d57a84c4ce792a713792c2da43bdef5c85be091807fa86977ff0a5c.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/1afaffa01d57a84c4ce792a713792c2da43bdef5c85be091807fa86977ff0a5c.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_521eb1369502288b
+  source_url: https://arxiv.org/abs/1610.01271
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 46217
+  sha256: 521eb1369502288bdd741f66442cc647e1c7600c0420a70df2ae721a7a406385
+  raw_path: ~/Claude/research_cache/blobs/sha256/521eb1369502288bdd741f66442cc647e1c7600c0420a70df2ae721a7a406385
+  text_path: ~/Claude/research_cache/text/sha256/521eb1369502288bdd741f66442cc647e1c7600c0420a70df2ae721a7a406385.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/521eb1369502288bdd741f66442cc647e1c7600c0420a70df2ae721a7a406385.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_3dd07ef86920cc0b
+  source_url: https://papers.neurips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 239361
+  sha256: 3dd07ef86920cc0b8e1e3fdcce22cde94d629fd9fcc22b8455486258ec1b6145
+  raw_path: ~/Claude/research_cache/blobs/sha256/3dd07ef86920cc0b8e1e3fdcce22cde94d629fd9fcc22b8455486258ec1b6145
+  text_path: ~/Claude/research_cache/text/sha256/3dd07ef86920cc0b8e1e3fdcce22cde94d629fd9fcc22b8455486258ec1b6145.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/3dd07ef86920cc0b8e1e3fdcce22cde94d629fd9fcc22b8455486258ec1b6145.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_5abb0ec38863981b
+  source_url: https://arxiv.org/abs/1905.02068
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 46006
+  sha256: 5abb0ec38863981b328e0440c2c0bec8d0e8f0ba719bee05cedbe9944b329aa4
+  raw_path: ~/Claude/research_cache/blobs/sha256/5abb0ec38863981b328e0440c2c0bec8d0e8f0ba719bee05cedbe9944b329aa4
+  text_path: ~/Claude/research_cache/text/sha256/5abb0ec38863981b328e0440c2c0bec8d0e8f0ba719bee05cedbe9944b329aa4.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/5abb0ec38863981b328e0440c2c0bec8d0e8f0ba719bee05cedbe9944b329aa4.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_6b07da7ac8ae55be
+  source_url: https://exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 803389
+  sha256: 6b07da7ac8ae55bef14bb6ecc09e90e783e73f989e8881bd211b9d6b2e013d79
+  raw_path: ~/Claude/research_cache/blobs/sha256/6b07da7ac8ae55bef14bb6ecc09e90e783e73f989e8881bd211b9d6b2e013d79
+  text_path: ~/Claude/research_cache/text/sha256/6b07da7ac8ae55bef14bb6ecc09e90e783e73f989e8881bd211b9d6b2e013d79.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/6b07da7ac8ae55bef14bb6ecc09e90e783e73f989e8881bd211b9d6b2e013d79.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_ec1eaaae453bfd67
+  source_url: https://arxiv.org/abs/1708.08522
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 48046
+  sha256: ec1eaaae453bfd679f2028dfe4f888fad97f480b5a3687139fc95f91647953fd
+  raw_path: ~/Claude/research_cache/blobs/sha256/ec1eaaae453bfd679f2028dfe4f888fad97f480b5a3687139fc95f91647953fd
+  text_path: ~/Claude/research_cache/text/sha256/ec1eaaae453bfd679f2028dfe4f888fad97f480b5a3687139fc95f91647953fd.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/ec1eaaae453bfd679f2028dfe4f888fad97f480b5a3687139fc95f91647953fd.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_f1e868fb274f4be6
+  source_url: https://www.statsig.com/blog/switchback-experiments
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 431783
+  sha256: f1e868fb274f4be641be8eafab43036f5390ef4b4b63dbac33c8c7a856ddd465
+  raw_path: ~/Claude/research_cache/blobs/sha256/f1e868fb274f4be641be8eafab43036f5390ef4b4b63dbac33c8c7a856ddd465
+  text_path: ~/Claude/research_cache/text/sha256/f1e868fb274f4be641be8eafab43036f5390ef4b4b63dbac33c8c7a856ddd465.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/f1e868fb274f4be641be8eafab43036f5390ef4b4b63dbac33c8c7a856ddd465.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok

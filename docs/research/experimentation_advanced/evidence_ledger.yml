@@ -1,0 +1,262 @@
+# Evidence ledger — experimentation_advanced
+# v2.1 strict-live (schema_version: 3). 11 entries, paraphrase-only first-pass.
+
+schema_version: 3
+topic: experimentation_advanced
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+
+entries:
+- evidence_id: ev_experimentation_advanced_0001
+  source_url: https://arxiv.org/abs/1810.08240
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_1b96e4201cbff42f
+  supports:
+  - claim_id: claim_experimentation_advanced_0001
+    field_path: bib_ledger.entries[0].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Howard, Ramdas, McAuliffe & Sekhon (2021) — derives time-uniform, nonparametric, nonasymptotic confidence sequences. Width converges to zero with explicit error bounds. Foundational for modern valid-anytime A/B testing inference.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0002
+  source_url: https://arxiv.org/abs/1512.04922
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_f5071bd8e5024c75
+  supports:
+  - claim_id: claim_experimentation_advanced_0002
+    field_path: bib_ledger.entries[1].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Johari, Pekelis & Walsh (2015 arXiv) — frames sequential analysis of A/B tests around the "peeking" problem. Provides always-valid p-values and CIs robust to continuous monitoring. KDD 2017 conference version "Peeking at A/B Tests" includes additional co-author Koomen.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0003
+  source_url: https://arxiv.org/abs/1404.7530
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_71ab3459dd906c3f
+  supports:
+  - claim_id: claim_experimentation_advanced_0003
+    field_path: bib_ledger.entries[2].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Eckles, Karrer & Ugander (2017) — evaluates methods for designing + analyzing randomized experiments in networks (social, marketplace) to reduce bias from interference. Published Journal of Causal Inference.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0004
+  source_url: https://arxiv.org/abs/2009.00148
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_815355773f49a6de
+  supports:
+  - claim_id: claim_experimentation_advanced_0004
+    field_path: bib_ledger.entries[3].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Bojinov, Simchi-Levi & Zhao (Management Science 2023) — derives optimal switchback designs under different carryover-effect assumptions. Applications: ride-hailing, online marketplaces.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0005
+  source_url: https://arxiv.org/abs/1003.0146
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_1afaffa01d57a84c
+  supports:
+  - claim_id: claim_experimentation_advanced_0005
+    field_path: bib_ledger.entries[4].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Li, Chu, Langford & Schapire (WWW 2010) — models personalized news article recommendation as a contextual bandit problem. Yahoo! Front Page Today Module deployment: 12.5% click lift vs context-free bandit. Foundational contextual-bandit paper.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0006
+  source_url: https://arxiv.org/abs/1610.01271
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_521eb1369502288b
+  supports:
+  - claim_id: claim_experimentation_advanced_0006
+    field_path: bib_ledger.entries[5].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Athey, Tibshirani & Wager (Annals of Statistics 2019) — generalized random forests framework with causal forests as a special case for HTE estimation. Adaptive weighting based on forest-derived heterogeneity.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0007
+  source_url: https://papers.neurips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_3dd07ef86920cc0b
+  supports:
+  - claim_id: claim_experimentation_advanced_0007
+    field_path: bib_ledger.entries[6].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Chapelle & Li (NeurIPS 2011) — empirical evaluation of Thompson sampling on simulated + real bandit data. Argues Thompson sampling should be a standard baseline.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary NeurIPS PDF
+    - cached raw blob
+
+- evidence_id: ev_experimentation_advanced_0008
+  source_url: https://arxiv.org/abs/1905.02068
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_5abb0ec38863981b
+  supports:
+  - claim_id: claim_experimentation_advanced_0008
+    field_path: bib_ledger.entries[7].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Gronau et al. (2019 arXiv) — Bayesian inference framework for A/B testing with informed priors. Prior + posterior probability formulation; discusses decision thresholds.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0009
+  source_url: https://exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_6b07da7ac8ae55be
+  supports:
+  - claim_id: claim_experimentation_advanced_0009
+    field_path: bib_ledger.entries[8].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Kohavi, Deng, Longbotham & Xu (KDD 2014) — seven rules of thumb derived from experimentation at Amazon, Booking.com, LinkedIn, multiple Microsoft properties. Covers ramping at 1% increments, sample-size choice, organizational adoption, OEC selection.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary author-hosted PDF
+    - KDD 2014 venue
+
+- evidence_id: ev_experimentation_advanced_0010
+  source_url: https://arxiv.org/abs/1708.08522
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_ec1eaaae453bfd67
+  supports:
+  - claim_id: claim_experimentation_advanced_0010
+    field_path: bib_ledger.entries[9].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Kao (Harvard PhD dissertation 2017 / arXiv 1708.08522) — develops causal framework + inference methodology for experiments where interference takes place on a network of influence.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - PhD dissertation
+    - arxiv preprint cached + extracted
+
+- evidence_id: ev_experimentation_advanced_0011
+  source_url: https://www.statsig.com/blog/switchback-experiments
+  source_type: blog
+  source_quality: secondary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_f1e868fb274f4be6
+  supports:
+  - claim_id: claim_experimentation_advanced_0011
+    field_path: bib_ledger.entries[10].title
+    evidence_role: identifies
+    evidence_role_strength: partial
+    extraction_method: paraphrase
+    link_confidence: 0.70
+  excerpt: 'Statsig blog — switchback experiments overview + considerations. Practitioner-aimed; covers carryover effects, optimal switching intervals, marketplace use cases.'
+  rights_status: private_use
+  confidence:
+    score: 0.70
+    factors:
+    - vendor blog (living doc)
+    - cached

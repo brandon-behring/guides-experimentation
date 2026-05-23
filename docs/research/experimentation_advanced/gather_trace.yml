@@ -1,0 +1,176 @@
+# Gather trace — experimentation_advanced
+# 11 accept records + 2 reject records (DoorDash blog 403; Lan-DeMets 1983 paywall).
+
+schema_version: 3
+topic: experimentation_advanced
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+
+fetches:
+- fetch_id: fetch_howard2021safe
+  sub_area: A1
+  query: 'Howard Ramdas McAuliffe Sekhon Time-uniform nonparametric nonasymptotic confidence sequences Annals of Statistics 2021 arxiv'
+  source_url: https://arxiv.org/abs/1810.08240
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Foundational valid-anytime CI paper. Sub-area A1 anchor.'
+  assigned_bibkey: howard2021safe
+
+- fetch_id: fetch_johari2015always
+  sub_area: A1
+  query: 'Johari Pekelis Walsh Peeking at A/B Tests KDD 2017 sequential testing arxiv'
+  source_url: https://arxiv.org/abs/1512.04922
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'arXiv preprint version of the Peeking at A/B Tests work. Classifies as pitfall (motivates anytime-valid design from the peeking problem) but also methodology.'
+  assigned_bibkey: johari2015always
+
+- fetch_id: fetch_eckles2017design
+  sub_area: A2
+  query: 'Eckles Karrer Ugander Design and Analysis of Experiments in Networks Reducing Bias from Interference 2017 arxiv'
+  source_url: https://arxiv.org/abs/1404.7530
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Foundational interference correction paper. Sub-area A2 anchor.'
+  assigned_bibkey: eckles2017design
+
+- fetch_id: fetch_bojinov2022design
+  sub_area: A5
+  query: 'Bojinov Simchi-Levi Zhao Design and Analysis of Switchback Experiments Management Science arxiv'
+  source_url: https://arxiv.org/abs/2009.00148
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Canonical switchback theory paper. Sub-area A5 anchor.'
+  assigned_bibkey: bojinov2022design
+
+- fetch_id: fetch_li2010contextual
+  sub_area: A3
+  query: 'contextual bandits Li Chu Langford A Contextual-Bandit Approach to Personalized News Article Recommendation WWW 2010'
+  source_url: https://arxiv.org/abs/1003.0146
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Foundational contextual bandits paper. Sub-area A3 anchor.'
+  assigned_bibkey: li2010contextual
+
+- fetch_id: fetch_athey2019generalized
+  sub_area: A3_HTE
+  query: 'Athey Tibshirani Wager Generalized random forests causal forests Annals of Statistics 2019 arxiv'
+  source_url: https://arxiv.org/abs/1610.01271
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: partial
+    is_useful: 4
+  decision: accept
+  reason: 'Causal forests foundational paper. HTE is largely out-of-scope (deferred to causal_inference_methods) but this paper bridges to A/B-test HTE applications. Initial projecteuclid cache was a 1152-byte stub; replaced with arxiv version 1610.01271.'
+  assigned_bibkey: athey2019generalized
+
+- fetch_id: fetch_chapelle2011empirical
+  sub_area: A3
+  query: 'Thompson sampling Chapelle Li An Empirical Evaluation of Thompson Sampling NeurIPS 2011 arxiv'
+  source_url: https://papers.neurips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Influential Thompson sampling empirical evaluation; positioned TS as standard bandit baseline.'
+  assigned_bibkey: chapelle2011empirical
+
+- fetch_id: fetch_gronau2019informed
+  sub_area: A6
+  query: 'Bayesian A/B testing posterior probability decision rule arxiv ROPE practitioner'
+  source_url: https://arxiv.org/abs/1905.02068
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 4
+  decision: accept
+  reason: 'Bayesian A/B test paper with prior + posterior probability framework. Sub-area A6 (Bayesian A/B) anchor.'
+  assigned_bibkey: gronau2019informed
+
+- fetch_id: fetch_kohavi2014seven
+  sub_area: A4
+  query: 'Microsoft ramping experimentation % traffic controlled rollout Kohavi 2014 Seven rules of thumb'
+  source_url: https://exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Practical ramping + experimentation rules from Microsoft + Amazon + LinkedIn + Booking. Sub-area A4 (ramping/staged rollout) anchor.'
+  assigned_bibkey: kohavi2014seven
+
+- fetch_id: fetch_kao2017causal
+  sub_area: A2
+  query: 'Saint Jacques Varshney Causal inference under network interference framework for experiments in social networks'
+  source_url: https://arxiv.org/abs/1708.08522
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: partial
+    is_useful: 4
+  decision: accept
+  reason: 'Initial query mis-attributed authors to Saint Jacques + Varshney (Lyft / Pinterest engineering blogs that I conflated); actual author is Edward Kao (Harvard PhD dissertation, MIT Lincoln Labs). Still in-scope for A2 (network interference framework).'
+  assigned_bibkey: kao2017causal
+
+- fetch_id: fetch_statsig_switchback
+  sub_area: A5
+  query: 'DoorDash switchback experiments experimentation platform engineering blog 2024'
+  source_url: https://www.statsig.com/blog/switchback-experiments
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: partial
+    is_useful: 3
+  decision: accept
+  reason: 'Statsig blog covering switchback overview. Fallback after DoorDash blog (preferred industrial source) returned HTTP 403 from urllib path.'
+  assigned_bibkey: statsig2024switchback
+
+- fetch_id: fetch_doordash_switchback_reject
+  sub_area: A5
+  query: 'DoorDash switchback experiments experimentation platform engineering blog 2024'
+  source_url: https://careersatdoordash.com/blog/switchback-tests-and-randomized-experimentation-under-network-effects-at-doordash/
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 4
+  decision: reject
+  reason: 'cache_source.py returned HTTP 403 (bot-blocked). Worth retrying with Playwright escalation in v2.2.2+ or capturing via archive.org. Tracked as a follow-up in Phase A.2 wrap-up.'
+
+- fetch_id: fetch_landemets1983_reject
+  sub_area: A1
+  query: 'Lan DeMets alpha spending function group sequential trials 1983 biometrika'
+  source_url: https://academic.oup.com/biomet/article-abstract/83/1/157/255102
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: reject
+  reason: 'Biometrika 1983 paywall — no accessible free version found. Foundational alpha-spending paper. Tracked as a follow-up; reference will need to be added with cache_ids: [] + unreachable: true annotation OR via a free monograph chapter.'
