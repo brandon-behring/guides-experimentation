@@ -1,0 +1,27 @@
+---
+/**
+ * Per-chapter route. Imports chapters from the content collection and
+ * delegates rendering to the toolkit's Chapter layout. Schema-agnostic —
+ * works for any preset.
+ *
+ * Added 2026-05-23 (Phase 1 ch 1 authoring) per scaffold issue #28 (closed
+ * in scaffold v3.6.1). Pilot repo was bootstrapped 2026-05-20, before v3.6.1
+ * shipped the auto-scaffolded version of this file in create-book.
+ */
+import { getCollection, render } from 'astro:content';
+import Chapter from '@brandon_m_behring/book-scaffold-astro/layouts/Chapter.astro';
+
+export async function getStaticPaths() {
+  const chapters = await getCollection('chapters', (entry) => !entry.data.draft);
+  return chapters.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+---
+<Chapter entry={entry} headings={headings}>
+  <Content />
+</Chapter>

@@ -1,0 +1,133 @@
+---
+title: "Why A/B testing now — the Microsoft ExP era and organizational adoption"
+slug: industrial-narrative
+description: "The historical trajectory of online controlled experiments from MSN/Bing through Amazon, LinkedIn, Booking.com to industry-wide practice — and why mature OCE is an organizational arc, not just a statistical-tooling arc."
+freshness: literature-survey
+last_verified: 2026-05-23
+tags: [history, industrial, organizational-maturity, kohavi, fabijan-evolution-model]
+sources: []
+draft: true
+mode: explanation
+target: retention
+ordering: concept-first
+commitment: long-lived
+paradigms: [default]
+research_debt_addressed: |
+  Most introductions to A/B testing pitch the statistical machinery first and the
+  organizational story as background. That ordering is backwards for IC5+ readers:
+  they already know the math exists and want to know why their org's experimentation
+  practice keeps stalling. This chapter foregrounds the industrial narrative — the
+  arc from MSN/Bing through Amazon, LinkedIn, Booking.com to industry-wide adoption —
+  and centers the Fabijan Evolution Model (technical → organizational → business
+  maturity) as the lens for diagnosing where one's own org is on that arc. Statistical
+  foundations come in chapter 4; this chapter answers "why now, why this way."
+task_classes: [orientation, organizational-diagnosis]
+companion_modules: []
+los:
+  - id: EXP-1.1
+    bloom: explain
+    statement: "Explain the historical trajectory of online controlled experiments from MSN/Bing to industry-wide adoption, including the load-bearing role of Microsoft's Analysis and Experimentation team"
+    anchor: experimentation-industrial-history
+    threshold: false
+  - id: EXP-1.2
+    bloom: define
+    statement: "Describe the three phases of Fabijan's Evolution Model (technical maturity → organizational maturity → business maturity) and the diagnostic signals associated with each phase"
+    anchor: experimentation-evolution-model
+    threshold: true
+  - id: EXP-1.3
+    bloom: explain
+    statement: "Explain why mature OCE practice requires organizational and business investment, not just technical tooling, by reference to Kohavi's KDD 2015 lessons and Kohavi's seven rules of thumb (KDD 2014)"
+    anchor: experimentation-tooling-vs-organization
+    threshold: false
+load_targets:
+  intrinsic: low
+  extraneous: low
+  germane: medium
+---
+
+import MarginNote from '@brandon_m_behring/book-scaffold-astro/components/MarginNote.astro';
+import KeyIdea from '@brandon_m_behring/book-scaffold-astro/components/KeyIdea.astro';
+import TryThis from '@brandon_m_behring/book-scaffold-astro/components/TryThis.astro';
+import Cite from '@brandon_m_behring/book-scaffold-astro/components/Cite.astro';
+
+# Why A/B testing now
+
+## Opening: when an experiment surprises you, it's usually right
+
+The single most important fact about industrial-scale A/B testing is that surprising results are not anomalies — they are the rule for anyone who runs enough experiments. Microsoft's Analysis and Experimentation team documented five separate cases in <Cite key="kohavi2012puzzling" /> where the result looked wrong, the root cause looked obvious, and both intuitions turned out to be incorrect. The first instinct on seeing a counterintuitive A/B test result — "the metric pipeline must be broken" or "the randomization must be off" — is wrong often enough that experienced experimentation teams treat surprise as a signal to dig in, not to dismiss.
+
+<MarginNote category="Note">
+This is the practical content of *Twyman's law* — "any figure that looks interesting or different is usually wrong" — but inverted. When the figure looks wrong but the experiment was well-designed, the wrongness is in your prior, not the data.
+</MarginNote>
+
+That observation lands harder when you know how many experiments run at scale. <Cite key="kohavi2014seven" /> reports that Bing and LinkedIn each run hundreds of concurrent experiments at any given time, with thousands of completed experiments across Amazon, Booking.com, LinkedIn, and multiple Microsoft properties contributing to the seven rules of thumb in that paper. At that volume, "results look surprising" is not a fluke — it's a daily diagnostic problem that requires both statistical tooling and organizational discipline.
+
+## The Microsoft ExP era
+
+The modern practice of online controlled experimentation grew out of a specific institutional context: Microsoft's Bing search team, the broader MSN/Live properties, and the Analysis and Experimentation (A&E / ExP) platform organization Kohavi led for over a decade. The arc <Cite key="kohavi2020trustworthy" /> describes — and that <Cite key="kohavi2015lessons" /> retrospects 12 years into — has three load-bearing moves:
+
+1. **Treat product development as a controlled-experiment loop.** Replace the classical *spec → dev → test → release* sequence with *build → measure → learn* cycles. <Cite key="kohavi2015lessons" /> grounds this in Eric Ries's Lean Startup framing and Steve Blank's customer-development model, but the experimentation-specific contribution is making the "measure" step an explicit, statistically rigorous controlled experiment rather than a release-day vibe check.
+
+2. **Build an experimentation platform as shared infrastructure.** Hundreds of concurrent experiments per property doesn't happen without dedicated platform investment — assignment, exposure logging, metric pipelines, sample-ratio sanity checks, sequential and ramp tooling, and a culture that expects every shipped change to have an experiment record attached to it. The Microsoft ExP platform <Cite key="kohavi2020trustworthy" /> is the canonical reference for what mature platform infrastructure looks like.
+
+3. **Make experimentation a default decision-making tool, not a special event.** <Cite key="kohavi2015lessons" /> opens with a Feynman quote — *"it doesn't matter how beautiful your theory is, it doesn't matter how smart you are. If it doesn't agree with experiment, it's wrong"* — but the operational point is that experiments become the standard mechanism for deciding which features ship. Without that organizational default, technical platform investment doesn't translate into decision quality.
+
+The same arc subsequently played out across Amazon, LinkedIn, Booking.com, Netflix, Google, and Facebook, with regional variations <Cite key="kohavi2014seven" />. By the mid-2010s the practice had stabilized enough that the *literature itself* — KDD industrial track papers, vendor blogs from MS-ExP and Netflix, eventually the Kohavi-Tang-Xu textbook <Cite key="kohavi2020trustworthy" /> — became a recognizable canon. Today's reader inherits that canon, but most reader's orgs are not at the Microsoft-ExP maturity level yet, and the gap matters.
+
+## The Evolution Model
+
+<Cite key="fabijan2017evolution" /> formalized that gap. Drawing on observations of Microsoft and collaborator organizations through their adoption of continuous experimentation, Fabijan et al. propose a three-phase Evolution Model. Each phase describes what mature practice looks like in three dimensions — technical, organizational, business — that scale roughly in tandem but can be diagnosed independently.
+
+| Phase | Technical maturity | Organizational maturity | Business maturity |
+|---|---|---|---|
+| 1. Technical | Experimentation platform exists; assignment + logging + basic metric pipeline shipped | A few champions run experiments on side projects; results are presented as "interesting data" | Product decisions made via opinion + incidental experimentation; experiments don't gate launches |
+| 2. Organizational | Platform supports concurrent experiments, automated SRM checks, guardrail metrics; experimentation is documented + reproducible | Experimentation is the default for shipping changes; teams have shared OEC vocabulary; analyses are reviewed | Experiments influence roadmap prioritization; teams stop launching changes that fail to move the OEC |
+| 3. Business | Platform supports sequential testing, variance reduction (CUPED), heterogeneous-treatment-effect analysis, switchback / interference-aware designs | OEC is contested + iterated upon at the org level; learning agendas drive experimentation strategy; failure is socialized | Experimentation outcomes feed strategy + investment decisions; org-level metrics tie back to experiment-derived insights; experimentation budget is treated like infrastructure |
+
+<KeyIdea>
+The Evolution Model's load-bearing claim is that **the three dimensions are not independent of each other**. An org that ships a great experimentation platform but doesn't develop the organizational habits to *use it* stays in Phase 1 on the platform-tech axis but lags on the business-impact axis. Most stalled experimentation programs are stuck at the Phase 1 → Phase 2 boundary, not the Phase 2 → Phase 3 boundary.
+</KeyIdea>
+
+## Why technical tooling alone isn't enough
+
+The Kohavi 2015 lessons <Cite key="kohavi2015lessons" /> and the seven rules of thumb <Cite key="kohavi2014seven" /> are both fundamentally organizational documents disguised as technical ones. The technical content (SRM detection, OEC design, sample-size pitfalls) is what's enumerated. The organizational content — *who reviews experiments, who has authority to reject a launch, what counts as "evidence" in roadmap meetings* — is what makes the technical content matter.
+
+Two patterns from <Cite key="kohavi2015lessons" /> recur across mature experimentation orgs:
+
+- **The OEC is contested.** A defined Overall Evaluation Criterion is a Phase 2 milestone, not a Phase 1 deliverable. Phase 1 orgs argue about whether to ship things; Phase 2 orgs argue about what the OEC *should be*. Phase 3 orgs maintain a learning agenda that drives OEC evolution. The OEC fight is not a bug — it's the load-bearing organizational ritual.
+
+- **Surprising results are escalated, not buried.** Phase 1 orgs treat surprising results as embarrassing and tend to hide them. Phase 2 orgs share them. Phase 3 orgs systematically dig into them, because — per <Cite key="kohavi2012puzzling" /> — the root causes generalize across products and the upside of understanding them is more durable than any single experiment.
+
+The seven rules of thumb <Cite key="kohavi2014seven" /> reinforce both patterns. Rule 1 ("small changes can have big impact") is technically a statistical observation but operationally an *organizational permission slip* — it gives PMs cover to ship experiments on apparently-trivial UI changes when they have evidence those changes move the needle. Rule 5 (around the OEC) and Rule 7 (around organizational adoption) are unambiguously about people and process.
+
+## Common first-year pitfalls — preview
+
+The pitfalls that catch first-year experimentation programs are the ones the rest of this guide treats at length:
+
+- **Sample-Ratio Mismatch (SRM)** — when the observed treatment-vs-control split doesn't match the designed split, the experiment is broken until you understand why. Chapter 7 covers SRM detection + root-cause taxonomy.
+- **Peeking + early stopping** — running a fixed-horizon hypothesis test while continuously monitoring results inflates false-positive rates. Chapter 9 covers sequential testing as the principled response.
+- **Novelty and primacy effects** — observed treatment effects can be transient, especially for UI changes that briefly attract or confuse users. Chapter 10 covers detection + estimation of long-term effects.
+- **Interference (SUTVA violations)** — most prominently in two-sided marketplaces (Uber, Lyft, DoorDash) where treated drivers affect availability for control riders. Chapter 12 covers cluster + switchback designs.
+- **Misaligned OEC** — the metric the experiment is optimizing is not the metric the business cares about. Chapter 6 covers OEC design + guardrail metrics.
+
+What these pitfalls share is that they are not detectable from a single experiment's results table. They require an experimentation program — multiple experiments, organizational memory, and a habit of looking for the failure modes — to diagnose. Phase 1 orgs don't catch them. Phase 2 orgs catch the easy ones (SRM, peeking). Phase 3 orgs catch the structural ones (interference, OEC drift).
+
+## A stretch problem
+
+<TryThis>
+**Scenario.** A 200-person fintech (call it *Apex Pay*) just stood up its first experimentation platform six months ago. The platform supports random assignment, exposure logging, and basic delta-vs-control metric pipelines for any of about 40 product metrics. Engineering is enthusiastic; PMs are mixed on whether to use it. So far around 50 experiments have run. Two PMs informally agreed on a "revenue per active user" OEC last quarter, but other teams use their own metrics. One recent home-page experiment showed a surprising -2.4% revenue drop in the treatment arm; the team that ran it concluded the metric pipeline had a bug and quietly shelved the result without follow-up. Leadership is satisfied with the platform's ROI so far but isn't sure what comes next.
+
+**Questions.**
+
+1. On Fabijan's Evolution Model (Phase 1 / 2 / 3, across technical / organizational / business dimensions), where would you place Apex Pay? Be specific — they may be at different phases on different dimensions.
+
+2. Name the next two concrete maturity moves you'd recommend to leadership. Don't propose statistical-tooling moves; propose organizational ones.
+
+3. Of <Cite key="kohavi2014seven" />'s seven rules of thumb, which one is Apex Pay most likely to violate first if the current trajectory continues? Why?
+</TryThis>
+
+There are no canonically correct answers — but a good answer notices that Apex Pay is closer to Phase 2 on the *technical* dimension and clearly stuck at Phase 1 on the *organizational* dimension. The shelved surprising result is the diagnostic signal: a Phase 2 org would have escalated and dug into the -2.4% drop, not buried it.
+
+## What's next
+
+Chapter 2 picks up the thread of *how* experimentation programs actually shift one's beliefs about a product — the four-step experimentation loop (hypothesize, design, run, analyze), the role of randomization in licensing causal claims, and the operational meaning of SUTVA. The statistical machinery — p-values, confidence intervals, hypothesis testing as a formal decision rule — lands in chapter 4, where we'll use a productive-failure framing per the design doc to motivate the formal apparatus through a "what would you do?" worked case before introducing the math.
