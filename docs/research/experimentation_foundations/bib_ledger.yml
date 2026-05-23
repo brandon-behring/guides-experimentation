@@ -1,0 +1,290 @@
+# Bibliography ledger — experimentation_foundations
+# v2.2+ strict-live first-pass. All entries `unverified` pending /dossier-audit
+# promotion (WebFetch confirmation of title + first-author + year).
+# Note: Manual /research-gather execution since the skill wasn't user-invokable
+# in this session; metadata derived from WebSearch results + WebFetch cache.
+
+schema_version: 2
+topic: experimentation_foundations
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+
+entries:
+- bibkey: kohavi2020trustworthy
+  primary_url: https://www.cambridge.org/9781108724265
+  title: 'Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing'
+  status: unverified
+  claim_family: textbook
+  authors: Kohavi, Tang & Xu (2020)
+  venue: Cambridge University Press
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0001
+  cache_ids:
+  - cache_21c244297161c5d9
+
+- bibkey: deng2013cuped
+  primary_url: https://doi.org/10.1145/2433396.2433413
+  title: 'Improving the sensitivity of online controlled experiments by utilizing pre-experiment data'
+  status: unverified
+  claim_family: methodology
+  authors: Deng, Xu, Kohavi & Walker (2013)
+  venue: WSDM 2013
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0002
+  cache_ids:
+  - cache_2a47c57030e52960
+
+- bibkey: bakshy2014designing
+  primary_url: https://arxiv.org/abs/1409.3174
+  title: 'Designing and Deploying Online Field Experiments'
+  status: verified
+  claim_family: methodology
+  authors: Bakshy, Eckles & Bernstein (2014)
+  venue: WWW 2014
+  retrieved_at: 2026-05-23
+  verified_at: 2026-05-23
+  verification_method: webfetch
+  verified_fields:
+  - title
+  - authors
+  - year
+  - primary_url
+  freshness_tier: stable
+  stale_after_days: 365
+  evidence_ids:
+  - ev_experimentation_foundations_0003
+  cache_ids:
+  - cache_4d6afc1fa928dba1
+
+- bibkey: xie2016improving
+  primary_url: https://doi.org/10.1145/2939672.2939733
+  title: 'Improving the Sensitivity of Online Controlled Experiments: Case Studies at Netflix'
+  status: unverified
+  claim_family: industrial
+  authors: Xie & Aurisset (2016)
+  venue: KDD 2016
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0004
+  cache_ids:
+  - cache_2cde7779b5be28cd
+
+- bibkey: fabijan2017evolution
+  primary_url: https://doi.org/10.1109/ICSE.2017.76
+  title: 'The Evolution of Continuous Experimentation in Software Product Development: From Data to a Data-Driven Organization at Scale'
+  status: unverified
+  claim_family: industrial
+  authors: Fabijan, Dmitriev, Olsson & Bosch (2017)
+  venue: ICSE 2017
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0005
+  cache_ids:
+  - cache_90a19d1997680d1c
+
+- bibkey: kohavi2012puzzling
+  primary_url: https://ai.stanford.edu/~ronnyk/puzzlingOutcomesInControlledExperiments.pdf
+  title: 'Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained'
+  status: unverified
+  claim_family: pitfall
+  authors: Kohavi et al. (2012)
+  venue: KDD 2012
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0006
+  cache_ids:
+  - cache_250c7f16c8451599
+
+- bibkey: kohavi2015lessons
+  primary_url: https://exp-platform.com/Documents/2015-08OnlineControlledExperimentsKDDKeynoteNR.pdf
+  title: 'Online Controlled Experiments: Lessons from Running A/B/n Tests for 12 Years'
+  status: unverified
+  claim_family: industrial
+  authors: Kohavi (2015)
+  venue: KDD 2015 (keynote)
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0007
+  cache_ids:
+  - cache_98ed9af48b6700a1
+
+- bibkey: wasserstein2016asa
+  primary_url: https://doi.org/10.1080/00031305.2016.1154108
+  title: 'The ASA Statement on p-Values: Context, Process, and Purpose'
+  status: unverified
+  claim_family: theory
+  authors: Wasserstein & Lazar (2016)
+  venue: The American Statistician
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0008
+  cache_ids:
+  - cache_6e80b3d236549f05
+
+- bibkey: fabijan2019diagnosing
+  primary_url: https://doi.org/10.1145/3292500.3330722
+  title: 'Diagnosing Sample Ratio Mismatch in Online Controlled Experiments: A Taxonomy and Rules of Thumb for Practitioners'
+  status: unverified
+  claim_family: pitfall
+  authors: Fabijan et al. (2019)
+  venue: KDD 2019
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: historical
+  stale_after_days: 1825
+  evidence_ids:
+  - ev_experimentation_foundations_0009
+  cache_ids:
+  - cache_fc5416977d437223
+
+- bibkey: sadeghi2021novelty
+  primary_url: https://arxiv.org/abs/2102.12893
+  title: 'Novelty and Primacy: A Long-Term Estimator for Online Experiments'
+  status: verified
+  claim_family: pitfall
+  authors: Sadeghi et al. (2021)
+  venue: arXiv preprint
+  retrieved_at: 2026-05-23
+  verified_at: 2026-05-23
+  verification_method: webfetch
+  verified_fields:
+  - title
+  - authors
+  - year
+  - primary_url
+  freshness_tier: stable
+  stale_after_days: 365
+  evidence_ids:
+  - ev_experimentation_foundations_0010
+  cache_ids:
+  - cache_4df70eeb12f61bdb
+
+- bibkey: deng2023cuped
+  primary_url: https://arxiv.org/abs/2312.02935
+  title: 'From Augmentation to Decomposition: A New Look at CUPED in 2023'
+  status: verified
+  claim_family: methodology
+  authors: Deng et al. (2023)
+  venue: arXiv preprint
+  retrieved_at: 2026-05-23
+  verified_at: 2026-05-23
+  verification_method: webfetch
+  verified_fields:
+  - title
+  - authors
+  - year
+  - primary_url
+  freshness_tier: active
+  stale_after_days: 90
+  evidence_ids:
+  - ev_experimentation_foundations_0011
+  cache_ids:
+  - cache_c56d2183c21ac373
+
+- bibkey: lin2024variance
+  primary_url: https://arxiv.org/abs/2410.09027
+  title: 'Variance reduction combining pre-experiment and in-experiment data'
+  status: verified
+  claim_family: methodology
+  authors: Lin & Crespo (2024)
+  venue: arXiv preprint
+  retrieved_at: 2026-05-23
+  verified_at: 2026-05-23
+  verification_method: webfetch
+  verified_fields:
+  - title
+  - authors
+  - year
+  - primary_url
+  freshness_tier: active
+  stale_after_days: 90
+  evidence_ids:
+  - ev_experimentation_foundations_0012
+  cache_ids:
+  - cache_06e223af99091ae3
+
+- bibkey: statsig2024power
+  primary_url: https://www.statsig.com/perspectives/power-analysis-ab-testing-guide
+  title: 'Power Analysis for A/B Testing: A Technical Guide'
+  status: unverified
+  claim_family: tooling
+  authors: Statsig (n.d.)
+  venue: Statsig perspectives
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: volatile
+  stale_after_days: 30
+  evidence_ids:
+  - ev_experimentation_foundations_0013
+  cache_ids:
+  - cache_06bd07e8f733c4cb
+
+- bibkey: eppo2024samplesize
+  primary_url: https://docs.geteppo.com/statistics/sample-size-calculator/usage/
+  title: 'Sample Size Calculator Usage'
+  status: unverified
+  claim_family: tooling
+  authors: Eppo (n.d.)
+  venue: Eppo Docs
+  retrieved_at: 2026-05-23
+  verified_at:
+  verification_method: webfetch
+  verified_fields:
+  - primary_url
+  freshness_tier: volatile
+  stale_after_days: 30
+  evidence_ids:
+  - ev_experimentation_foundations_0014
+  cache_ids:
+  - cache_aa1e40858ccf42c0

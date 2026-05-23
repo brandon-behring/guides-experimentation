@@ -1,0 +1,334 @@
+# Evidence ledger — experimentation_foundations
+# v2.1 strict-live (schema_version: 3). One headline-claim entry per bib entry
+# at this first-pass density; subsequent /agent-index Phase 2a will atomize
+# further with verbatim_match anchors. extraction_method: paraphrase used here
+# (link_confidence ≤ 0.85) since we have not yet anchored byte offsets.
+
+schema_version: 3
+topic: experimentation_foundations
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+
+entries:
+- evidence_id: ev_experimentation_foundations_0001
+  source_url: https://www.cambridge.org/9781108724265
+  source_type: paper
+  source_quality: secondary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_21c244297161c5d9
+  supports:
+  - claim_id: claim_experimentation_foundations_0001
+    field_path: bib_ledger.entries[0].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Kohavi, Tang & Xu (2020) "Trustworthy Online Controlled Experiments" — Cambridge UP textbook synthesizing experimentation practice at Microsoft, LinkedIn, Google. Canonical reference across all sub-areas; only ch1 free PDF cached (rest paywalled).'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - secondary cache (free chapter only)
+    - canonical textbook
+
+- evidence_id: ev_experimentation_foundations_0002
+  source_url: https://doi.org/10.1145/2433396.2433413
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_2a47c57030e52960
+  supports:
+  - claim_id: claim_experimentation_foundations_0002
+    field_path: bib_ledger.entries[1].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Deng, Xu, Kohavi & Walker (2013) CUPED original — uses pre-experiment covariates to reduce variance of A/B test estimators. Mainstreamed variance reduction in online experimentation.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary author-hosted PDF
+    - cached raw blob
+
+- evidence_id: ev_experimentation_foundations_0003
+  source_url: https://arxiv.org/abs/1409.3174
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_4d6afc1fa928dba1
+  supports:
+  - claim_id: claim_experimentation_foundations_0003
+    field_path: bib_ledger.entries[2].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Bakshy, Eckles & Bernstein (2014) — introduces PlanOut, a language for specifying experimental designs (A/B, factorial, conditional) separately from application code. Foundational randomization framework, deployed at Facebook.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached raw + extracted text
+
+- evidence_id: ev_experimentation_foundations_0004
+  source_url: https://doi.org/10.1145/2939672.2939733
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_2cde7779b5be28cd
+  supports:
+  - claim_id: claim_experimentation_foundations_0004
+    field_path: bib_ledger.entries[3].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Xie & Aurisset (2016) at Netflix — demonstrates that post-assigned variance reduction (post-stratification, CUPED) outperforms at-assignment stratified sampling at large scale. Industrial deployment case study.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary KDD PDF
+    - cached raw blob
+
+- evidence_id: ev_experimentation_foundations_0005
+  source_url: https://doi.org/10.1109/ICSE.2017.76
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_90a19d1997680d1c
+  supports:
+  - claim_id: claim_experimentation_foundations_0005
+    field_path: bib_ledger.entries[4].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Fabijan, Dmitriev, Olsson & Bosch (2017) — Evolution Model for organizational adoption of continuous experimentation. Three phases: technical, organizational, business evolution. Maturity-model framework.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary DOI page cached
+    - peer-reviewed conference
+
+- evidence_id: ev_experimentation_foundations_0006
+  source_url: https://ai.stanford.edu/~ronnyk/puzzlingOutcomesInControlledExperiments.pdf
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_250c7f16c8451599
+  supports:
+  - claim_id: claim_experimentation_foundations_0006
+    field_path: bib_ledger.entries[5].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Kohavi et al. (2012) — Five puzzling A/B test outcomes explained, covering common pitfalls including Twyman''s law, primacy/novelty effects, and SRM precursors. Microsoft ExP team reflections.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary author-hosted PDF
+    - KDD 2012 venue
+
+- evidence_id: ev_experimentation_foundations_0007
+  source_url: https://exp-platform.com/Documents/2015-08OnlineControlledExperimentsKDDKeynoteNR.pdf
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_98ed9af48b6700a1
+  supports:
+  - claim_id: claim_experimentation_foundations_0007
+    field_path: bib_ledger.entries[6].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Kohavi (2015) KDD keynote — Lessons from 12 years of A/B/n testing at Microsoft. Synthesizes industrial experience on OEC design, metric selection, organizational adoption patterns.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - primary author-hosted PDF
+    - KDD 2015 keynote slides
+
+- evidence_id: ev_experimentation_foundations_0008
+  source_url: https://doi.org/10.1080/00031305.2016.1154108
+  source_type: paper
+  source_quality: official
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_6e80b3d236549f05
+  supports:
+  - claim_id: claim_experimentation_foundations_0008
+    field_path: bib_ledger.entries[7].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Wasserstein & Lazar (2016) — American Statistical Association statement on p-values: six principles clarifying what p-values do and do not measure. Foundational for hypothesis-testing interpretation in A/B testing pedagogy.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - ASA-issued official statement
+    - cached from Berkeley mirror
+
+- evidence_id: ev_experimentation_foundations_0009
+  source_url: https://doi.org/10.1145/3292500.3330722
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_fc5416977d437223
+  supports:
+  - claim_id: claim_experimentation_foundations_0009
+    field_path: bib_ledger.entries[8].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Fabijan et al. (2019) — Sample Ratio Mismatch (SRM) taxonomy derived from running OCEs at 4 companies, 25+ products. Provides rules of thumb for SRM detection + root-cause classification.'
+  rights_status: private_use
+  confidence:
+    score: 0.80
+    factors:
+    - KDD 2019 paper
+    - cached KDD page
+
+- evidence_id: ev_experimentation_foundations_0010
+  source_url: https://arxiv.org/abs/2102.12893
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_4df70eeb12f61bdb
+  supports:
+  - claim_id: claim_experimentation_foundations_0010
+    field_path: bib_ledger.entries[9].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Sadeghi, Gupta, Gramatovici, Lu, Ai & Zhang (2021) at Microsoft — proposes a difference-in-differences observational estimator for user-learning (novelty + primacy) in online experiments. Aims to estimate long-term effects without extending experiment duration.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_foundations_0011
+  source_url: https://arxiv.org/abs/2312.02935
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_c56d2183c21ac373
+  supports:
+  - claim_id: claim_experimentation_foundations_0011
+    field_path: bib_ledger.entries[10].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Deng, Hagar, Stevens, Xifara, Yuan & Gandhi (2023) — revisits CUPED 10 years on. Reframes CUPED as a general augmentation framework (vs regression adjustment), supports ratio + percentile metrics, leverages in-experiment data via approximate null augmentation (ANA).'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_foundations_0012
+  source_url: https://arxiv.org/abs/2410.09027
+  source_type: paper
+  source_quality: primary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_06e223af99091ae3
+  supports:
+  - claim_id: claim_experimentation_foundations_0012
+    field_path: bib_ledger.entries[11].title
+    evidence_role: identifies
+    evidence_role_strength: full
+    extraction_method: paraphrase
+    link_confidence: 0.80
+  excerpt: 'Lin & Crespo (2024) at Etsy — proposes framework combining pre-experiment and in-experiment data for variance reduction beyond CUPED/CUPAC. Develops asymptotic theory + consistent variance estimators; deployed empirically at Etsy.'
+  rights_status: private_use
+  confidence:
+    score: 0.85
+    factors:
+    - primary arXiv abstract
+    - cached + extracted
+
+- evidence_id: ev_experimentation_foundations_0013
+  source_url: https://www.statsig.com/perspectives/power-analysis-ab-testing-guide
+  source_type: blog
+  source_quality: secondary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_06bd07e8f733c4cb
+  supports:
+  - claim_id: claim_experimentation_foundations_0013
+    field_path: bib_ledger.entries[12].title
+    evidence_role: identifies
+    evidence_role_strength: partial
+    extraction_method: paraphrase
+    link_confidence: 0.70
+  excerpt: 'Statsig perspectives — Power Analysis for A/B Testing technical guide. Practitioner methodology: sample size, MDE, significance level, base rate. Living vendor doc.'
+  rights_status: private_use
+  confidence:
+    score: 0.70
+    factors:
+    - vendor blog (living doc)
+    - cached
+
+- evidence_id: ev_experimentation_foundations_0014
+  source_url: https://docs.geteppo.com/statistics/sample-size-calculator/usage/
+  source_type: blog
+  source_quality: secondary
+  retrieved_at: 2026-05-23
+  verification_method: webfetch
+  cache_ids:
+  - cache_aa1e40858ccf42c0
+  supports:
+  - claim_id: claim_experimentation_foundations_0014
+    field_path: bib_ledger.entries[13].title
+    evidence_role: identifies
+    evidence_role_strength: partial
+    extraction_method: paraphrase
+    link_confidence: 0.70
+  excerpt: 'Eppo docs — Sample size calculator usage. Practitioner methodology for MDE-based sample-size sizing using historical data warehouse data.'
+  rights_status: private_use
+  confidence:
+    score: 0.70
+    factors:
+    - vendor docs (living doc)
+    - cached

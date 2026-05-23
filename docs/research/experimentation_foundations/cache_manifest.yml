@@ -1,0 +1,193 @@
+# Cache manifest — experimentation_foundations
+# 14 entries (13 cached primaries + 1 Kohavi 2020 chapter 1 free PDF used as
+# cache surrogate for the paywalled book at cambridge.org/9781108724265).
+
+schema_version: 2
+topic: experimentation_foundations
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+cache_root: ~/Claude/research_cache
+
+entries:
+- cache_id: cache_21c244297161c5d9
+  source_url: https://experimentguide.com/wp-content/uploads/TrustworthyOnlineControlledExperiments_PracticalGuideToABTesting_Chapter1.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 3987793
+  sha256: 21c244297161c5d9d55bd77967333bb2a01eb757db7d484cb84d43b756937b5e
+  raw_path: ~/Claude/research_cache/blobs/sha256/21c244297161c5d9d55bd77967333bb2a01eb757db7d484cb84d43b756937b5e
+  text_path: ~/Claude/research_cache/text/sha256/21c244297161c5d9d55bd77967333bb2a01eb757db7d484cb84d43b756937b5e.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/21c244297161c5d9d55bd77967333bb2a01eb757db7d484cb84d43b756937b5e.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_2a47c57030e52960
+  source_url: https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 564364
+  sha256: 2a47c57030e52960c57888ea3b2247fba699b11f0aefbc669e9fae51e82bc973
+  raw_path: ~/Claude/research_cache/blobs/sha256/2a47c57030e52960c57888ea3b2247fba699b11f0aefbc669e9fae51e82bc973
+  text_path: ~/Claude/research_cache/text/sha256/2a47c57030e52960c57888ea3b2247fba699b11f0aefbc669e9fae51e82bc973.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/2a47c57030e52960c57888ea3b2247fba699b11f0aefbc669e9fae51e82bc973.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_4d6afc1fa928dba1
+  source_url: https://arxiv.org/abs/1409.3174
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 46579
+  sha256: 4d6afc1fa928dba10c9039a7effa15b3a560c73c24e1417940090af3031893d0
+  raw_path: ~/Claude/research_cache/blobs/sha256/4d6afc1fa928dba10c9039a7effa15b3a560c73c24e1417940090af3031893d0
+  text_path: ~/Claude/research_cache/text/sha256/4d6afc1fa928dba10c9039a7effa15b3a560c73c24e1417940090af3031893d0.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/4d6afc1fa928dba10c9039a7effa15b3a560c73c24e1417940090af3031893d0.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_2cde7779b5be28cd
+  source_url: https://www.kdd.org/kdd2016/papers/files/adp0945-xieA.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 940927
+  sha256: 2cde7779b5be28cdcead7cbf2d3022db091f0e51d782614cadc61070d3662893
+  raw_path: ~/Claude/research_cache/blobs/sha256/2cde7779b5be28cdcead7cbf2d3022db091f0e51d782614cadc61070d3662893
+  text_path: ~/Claude/research_cache/text/sha256/2cde7779b5be28cdcead7cbf2d3022db091f0e51d782614cadc61070d3662893.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/2cde7779b5be28cdcead7cbf2d3022db091f0e51d782614cadc61070d3662893.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_90a19d1997680d1c
+  source_url: https://doi.org/10.1109/ICSE.2017.76
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 50433
+  sha256: 90a19d1997680d1c91572b89d3eddf5bea055a5643408c8ee8491e8e8c31b0e5
+  raw_path: ~/Claude/research_cache/blobs/sha256/90a19d1997680d1c91572b89d3eddf5bea055a5643408c8ee8491e8e8c31b0e5
+  text_path: ~/Claude/research_cache/text/sha256/90a19d1997680d1c91572b89d3eddf5bea055a5643408c8ee8491e8e8c31b0e5.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/90a19d1997680d1c91572b89d3eddf5bea055a5643408c8ee8491e8e8c31b0e5.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_250c7f16c8451599
+  source_url: https://ai.stanford.edu/~ronnyk/puzzlingOutcomesInControlledExperiments.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 784289
+  sha256: 250c7f16c845159903bfc76c42f39950872a214dad21088ee1f04b7cdff83678
+  raw_path: ~/Claude/research_cache/blobs/sha256/250c7f16c845159903bfc76c42f39950872a214dad21088ee1f04b7cdff83678
+  text_path: ~/Claude/research_cache/text/sha256/250c7f16c845159903bfc76c42f39950872a214dad21088ee1f04b7cdff83678.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/250c7f16c845159903bfc76c42f39950872a214dad21088ee1f04b7cdff83678.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_98ed9af48b6700a1
+  source_url: https://exp-platform.com/Documents/2015-08OnlineControlledExperimentsKDDKeynoteNR.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 2166511
+  sha256: 98ed9af48b6700a16952ee15947cec31ec8940d1394c73f6bde6a49f6c9a6060
+  raw_path: ~/Claude/research_cache/blobs/sha256/98ed9af48b6700a16952ee15947cec31ec8940d1394c73f6bde6a49f6c9a6060
+  text_path: ~/Claude/research_cache/text/sha256/98ed9af48b6700a16952ee15947cec31ec8940d1394c73f6bde6a49f6c9a6060.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/98ed9af48b6700a16952ee15947cec31ec8940d1394c73f6bde6a49f6c9a6060.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_6e80b3d236549f05
+  source_url: https://www.stat.berkeley.edu/~aldous/Real_World/ASA_statement.pdf
+  fetched_at: 2026-05-23
+  content_type: application/pdf
+  bytes: 536461
+  sha256: 6e80b3d236549f05bc29d9f8023225112082b984694ebe869e1a062b1163d192
+  raw_path: ~/Claude/research_cache/blobs/sha256/6e80b3d236549f05bc29d9f8023225112082b984694ebe869e1a062b1163d192
+  text_path: ~/Claude/research_cache/text/sha256/6e80b3d236549f05bc29d9f8023225112082b984694ebe869e1a062b1163d192.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/6e80b3d236549f05bc29d9f8023225112082b984694ebe869e1a062b1163d192.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: raw_only
+
+- cache_id: cache_fc5416977d437223
+  source_url: https://www.kdd.org/kdd2019/accepted-papers/view/diagnosing-sample-ratio-mismatch-in-online-controlled-experiments-a-taxonom
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 28402
+  sha256: fc5416977d437223cb251dbc3318f51ec7dc13d89480330e7eec957079af85c4
+  raw_path: ~/Claude/research_cache/blobs/sha256/fc5416977d437223cb251dbc3318f51ec7dc13d89480330e7eec957079af85c4
+  text_path: ~/Claude/research_cache/text/sha256/fc5416977d437223cb251dbc3318f51ec7dc13d89480330e7eec957079af85c4.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/fc5416977d437223cb251dbc3318f51ec7dc13d89480330e7eec957079af85c4.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_4df70eeb12f61bdb
+  source_url: https://arxiv.org/abs/2102.12893
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 47589
+  sha256: 4df70eeb12f61bdb9e700814aa350ff6345c8335c197c06c1204bbf7b0925d25
+  raw_path: ~/Claude/research_cache/blobs/sha256/4df70eeb12f61bdb9e700814aa350ff6345c8335c197c06c1204bbf7b0925d25
+  text_path: ~/Claude/research_cache/text/sha256/4df70eeb12f61bdb9e700814aa350ff6345c8335c197c06c1204bbf7b0925d25.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/4df70eeb12f61bdb9e700814aa350ff6345c8335c197c06c1204bbf7b0925d25.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_c56d2183c21ac373
+  source_url: https://arxiv.org/abs/2312.02935
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 46213
+  sha256: c56d2183c21ac37316a3e518f0e7bb2770197763395fa86b0282ae3e42697ca7
+  raw_path: ~/Claude/research_cache/blobs/sha256/c56d2183c21ac37316a3e518f0e7bb2770197763395fa86b0282ae3e42697ca7
+  text_path: ~/Claude/research_cache/text/sha256/c56d2183c21ac37316a3e518f0e7bb2770197763395fa86b0282ae3e42697ca7.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/c56d2183c21ac37316a3e518f0e7bb2770197763395fa86b0282ae3e42697ca7.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_06e223af99091ae3
+  source_url: https://arxiv.org/abs/2410.09027
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 46781
+  sha256: 06e223af99091ae3ecd21c4fd77b8321faadbd0b0240340eac927f3cd7f0e2a7
+  raw_path: ~/Claude/research_cache/blobs/sha256/06e223af99091ae3ecd21c4fd77b8321faadbd0b0240340eac927f3cd7f0e2a7
+  text_path: ~/Claude/research_cache/text/sha256/06e223af99091ae3ecd21c4fd77b8321faadbd0b0240340eac927f3cd7f0e2a7.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/06e223af99091ae3ecd21c4fd77b8321faadbd0b0240340eac927f3cd7f0e2a7.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_06bd07e8f733c4cb
+  source_url: https://www.statsig.com/perspectives/power-analysis-ab-testing-guide
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 425740
+  sha256: 06bd07e8f733c4cb360b56689bb66cdf144cc872825f23f159d5713fb2d8def7
+  raw_path: ~/Claude/research_cache/blobs/sha256/06bd07e8f733c4cb360b56689bb66cdf144cc872825f23f159d5713fb2d8def7
+  text_path: ~/Claude/research_cache/text/sha256/06bd07e8f733c4cb360b56689bb66cdf144cc872825f23f159d5713fb2d8def7.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/06bd07e8f733c4cb360b56689bb66cdf144cc872825f23f159d5713fb2d8def7.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok
+
+- cache_id: cache_aa1e40858ccf42c0
+  source_url: https://docs.geteppo.com/statistics/sample-size-calculator/usage/
+  fetched_at: 2026-05-23
+  content_type: text/html
+  bytes: 63252
+  sha256: aa1e40858ccf42c0dfafce7606bd8511e9d6df0fd3a4efdb38e8bc11372c0847
+  raw_path: ~/Claude/research_cache/blobs/sha256/aa1e40858ccf42c0dfafce7606bd8511e9d6df0fd3a4efdb38e8bc11372c0847
+  text_path: ~/Claude/research_cache/text/sha256/aa1e40858ccf42c0dfafce7606bd8511e9d6df0fd3a4efdb38e8bc11372c0847.txt
+  metadata_path: ~/Claude/research_cache/metadata/sha256/aa1e40858ccf42c0dfafce7606bd8511e9d6df0fd3a4efdb38e8bc11372c0847.json
+  restricted: false
+  rights_status: private_use
+  extraction_status: ok

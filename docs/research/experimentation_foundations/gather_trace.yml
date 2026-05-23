@@ -1,0 +1,194 @@
+# Gather trace (Self-RAG reflection records) — experimentation_foundations
+# v2.2 strict-live (schema_version: 3). First-pass: 14 accept records. No
+# explicit rejects logged in this run (all candidates surfaced via WebSearch
+# were within scope); subsequent depth-expansion rounds will accumulate more
+# fetches with reject + escalate_to_manual decisions.
+
+schema_version: 3
+topic: experimentation_foundations
+generated_at: 2026-05-23
+current_as_of: 2026-05-23
+freshness_policy: strict_live
+
+fetches:
+- fetch_id: fetch_kohavi2020trust
+  sub_area: A1
+  query: 'Kohavi Tang Xu Trustworthy Online Controlled Experiments Cambridge book A/B testing 2020'
+  source_url: https://www.cambridge.org/9781108724265
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Canonical textbook of the topic; covers all 6 sub-areas. Paywalled — chapter-1 free PDF cached as surrogate.'
+  assigned_bibkey: kohavi2020trustworthy
+
+- fetch_id: fetch_deng2013cuped
+  sub_area: A6
+  query: 'Deng Xu Kohavi Walker CUPED Improving the Sensitivity of Online Controlled Experiments WSDM 2013'
+  source_url: https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Original CUPED paper; foundational for sub-area A6 (variance reduction).'
+  assigned_bibkey: deng2013cuped
+
+- fetch_id: fetch_bakshy2014planout
+  sub_area: A5
+  query: 'Bakshy Eckles Bernstein PlanOut Designing and Deploying Online Field Experiments WWW 2014'
+  source_url: https://arxiv.org/abs/1409.3174
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'PlanOut framework — foundational randomization framework for online field experiments. Sub-area A5 anchor.'
+  assigned_bibkey: bakshy2014designing
+
+- fetch_id: fetch_xie2016netflix
+  sub_area: A6
+  query: 'Xie Aurisset Improving the Sensitivity of Online Controlled Experiments Netflix RecSys 2016 case studies'
+  source_url: https://www.kdd.org/kdd2016/papers/files/adp0945-xieA.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Industrial case study of variance reduction at Netflix. Note: research_plan said RecSys 2016 but actual venue is KDD 2016; plan to correct in next pass.'
+  assigned_bibkey: xie2016improving
+
+- fetch_id: fetch_fabijan2017evolution
+  sub_area: A1
+  query: 'Fabijan Dmitriev Olsson Bosch Evolution of Continuous Experimentation Software Product Development ICSE 2017'
+  source_url: https://doi.org/10.1109/ICSE.2017.76
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Evolution Model paper — three phases of organizational adoption. Sub-area A1 maturity-model anchor.'
+  assigned_bibkey: fabijan2017evolution
+
+- fetch_id: fetch_kohavi2012puzzling
+  sub_area: A6_pitfall
+  query: 'A/B testing pitfalls primacy effect novelty effect Twymans law KDD experimentation'
+  source_url: https://ai.stanford.edu/~ronnyk/puzzlingOutcomesInControlledExperiments.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Microsoft ExP foundational pitfalls paper. Covers Twymans law, primacy/novelty, SRM precursors. Multi-classifies (industrial + pitfall claim_family).'
+  assigned_bibkey: kohavi2012puzzling
+
+- fetch_id: fetch_kohavi2015lessons
+  sub_area: A4
+  query: 'Overall Evaluation Criterion OEC metric design A/B testing Kohavi Microsoft'
+  source_url: https://exp-platform.com/Documents/2015-08OnlineControlledExperimentsKDDKeynoteNR.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 4
+  decision: accept
+  reason: '12-year retrospective KDD keynote covering OEC design, metric selection. Sub-area A4 metric-design anchor.'
+  assigned_bibkey: kohavi2015lessons
+
+- fetch_id: fetch_wasserstein2016asa
+  sub_area: A2
+  query: 'p-value interpretation Wasserman statistics ASA statement 2016 American Statistical Association'
+  source_url: https://www.stat.berkeley.edu/~aldous/Real_World/ASA_statement.pdf
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'Official ASA statement — six principles for p-value interpretation. Foundational for sub-area A2 (hypothesis testing). Cached from Berkeley free mirror.'
+  assigned_bibkey: wasserstein2016asa
+
+- fetch_id: fetch_fabijan2019srm
+  sub_area: A5
+  query: 'A/B testing sample ratio mismatch SRM detection chi-squared Microsoft 2019'
+  source_url: https://www.kdd.org/kdd2019/accepted-papers/view/diagnosing-sample-ratio-mismatch-in-online-controlled-experiments-a-taxonom
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'SRM taxonomy paper — KDD 2019. Sub-area A5 SRM anchor; cross-listed pitfall.'
+  assigned_bibkey: fabijan2019diagnosing
+
+- fetch_id: fetch_sadeghi2021novelty
+  sub_area: A6_pitfall
+  query: 'A/B testing pitfalls primacy effect novelty effect Twymans law KDD experimentation'
+  source_url: https://arxiv.org/abs/2102.12893
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 4
+  decision: accept
+  reason: 'DiD estimator for novelty/primacy at Microsoft. Sub-area pitfall — novelty/primacy formalization.'
+  assigned_bibkey: sadeghi2021novelty
+
+- fetch_id: fetch_deng2023cuped
+  sub_area: A6
+  query: 'variance reduction CUPED machine learning extension arxiv 2023 2024 control variates'
+  source_url: https://arxiv.org/abs/2312.02935
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 5
+  decision: accept
+  reason: 'CUPED 10-year retrospective + augmentation reframing + ANA. Variance reduction frontier paper.'
+  assigned_bibkey: deng2023cuped
+
+- fetch_id: fetch_lin2024variance
+  sub_area: A6
+  query: 'variance reduction CUPED machine learning extension arxiv 2023 2024 control variates'
+  source_url: https://arxiv.org/abs/2410.09027
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: full
+    is_useful: 4
+  decision: accept
+  reason: 'Etsy deployment of pre+in-experiment variance reduction. Recent industrial methodology paper.'
+  assigned_bibkey: lin2024variance
+
+- fetch_id: fetch_statsig_power
+  sub_area: A3
+  query: 'A/B testing power analysis minimum detectable effect practitioner blog Eppo Statsig methodology'
+  source_url: https://www.statsig.com/perspectives/power-analysis-ab-testing-guide
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: partial
+    is_useful: 3
+  decision: accept
+  reason: 'Statsig practitioner power-analysis guide. Sub-area A3 practitioner reference; vendor doc so lower is_useful.'
+  assigned_bibkey: statsig2024power
+
+- fetch_id: fetch_eppo_sample_size
+  sub_area: A3
+  query: 'A/B testing power analysis minimum detectable effect practitioner blog Eppo Statsig methodology'
+  source_url: https://docs.geteppo.com/statistics/sample-size-calculator/usage/
+  fetched_at: 2026-05-23
+  reflection:
+    is_relevant: true
+    is_supported: partial
+    is_useful: 3
+  decision: accept
+  reason: 'Eppo sample-size calculator usage docs. Sub-area A3 practitioner reference; vendor doc so lower is_useful.'
+  assigned_bibkey: eppo2024samplesize
